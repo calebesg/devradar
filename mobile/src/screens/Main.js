@@ -6,7 +6,8 @@ import {
   Text, 
   TextInput, 
   TouchableOpacity, 
-  KeyboardAvoidingView
+  KeyboardAvoidingView,
+  Platform
 } from 'react-native';
 import MapView, { Marker, Callout } from 'react-native-maps';
 import { requestPermissionsAsync, getCurrentPositionAsync } from 'expo-location';
@@ -118,25 +119,23 @@ function Main({ navigation }) {
       </MapView>
 
       <KeyboardAvoidingView
-        behavior= 'padding'
-        enabled
+        behavior={Platform.OS === 'ios' ? 'padding' : undefined}
         style={styles.searchForm}
       >
-        <View style={styles.searchContainer}>
-          <TextInput 
-            style={styles.searchInput}
-            placeholder="Buscar por techs..."
-            placeholderTextColor="#999"
-            autoCapitalize="words"
-            autoCorrect={false}
-            value={techs}
-            onChangeText={setTechs}
-          />
+        <TextInput 
+          style={styles.searchInput}
+          placeholder="Buscar por techs..."
+          placeholderTextColor="#999"
+          autoCapitalize="words"
+          autoCorrect={false}
+          value={techs}
+          onChangeText={setTechs}
+        />
 
-          <TouchableOpacity onPress={loadDevs} style={styles.seachButton}>
-            <MaterialIcons name="my-location" size={20} color="#FFF" />
-          </TouchableOpacity>
-        </View>
+        <TouchableOpacity onPress={loadDevs} style={styles.seachButton}>
+          <MaterialIcons name="my-location" size={20} color="#FFF" />
+        </TouchableOpacity>
+       
       </KeyboardAvoidingView>
     </>
   );
@@ -173,16 +172,11 @@ const styles = StyleSheet.create({
 
   searchForm: {
     position: 'absolute',
-    bottom: 0,
+    bottom: 40,
     left: 20,
     right: 20,
     zIndex: 5,
-  },
-
-  searchContainer: {
-    flex: 1,
-    flexDirection: 'row',
-    paddingBottom: 40
+    flexDirection: 'row'
   },
 
   searchInput: {
