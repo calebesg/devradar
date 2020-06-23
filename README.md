@@ -3,7 +3,7 @@
 </h1>
 <br>
 
-<p align="center"><b>Your waste collection marketplace, build in a OmniStack week 🚀</b></p>
+<p align="center"><b>Build in a OmniStack week 🚀</b></p>
 
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/calebesg/devradar">
@@ -32,7 +32,7 @@
 
 ## 🏷️ About
 
-Presented by Rocketseat at OmniStack week
+Presented by Rocketseat at OmniStack week. DevRadar is an application to search for other devs in your region, to make a programmer pair.
 
 ## 💻 Technologies
 This app features all the latest tools and practices in mobile/web development!
