@@ -24,8 +24,8 @@
 <br>
 
 <div>
-  <img src="https://user-images.githubusercontent.com/36782514/85340677-e100d180-b4bc-11ea-95a8-20b418de1d13.gif" alt="demo" height="370">
-  <img src="https://user-images.githubusercontent.com/36782514/85340818-2fae6b80-b4bd-11ea-8d3c-24c9646578f9.gif" alt="demo" height="370">
+  <img src="https://user-images.githubusercontent.com/36782514/85340677-e100d180-b4bc-11ea-95a8-20b418de1d13.gif" alt="demo" height="350">
+  <img src="https://user-images.githubusercontent.com/36782514/85340818-2fae6b80-b4bd-11ea-8d3c-24c9646578f9.gif" alt="demo" height="350">
 </div>
 
 <hr />
